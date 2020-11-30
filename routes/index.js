@@ -3,6 +3,7 @@ import {
   paginaInicio,
   paginaNosotros,
   paginaViajes,
+  paginaDetalleViaje,
   paginaTestimonios,
 } from '../controllers/paginasController.js';
 
@@ -13,5 +14,6 @@ router.get('/', paginaInicio);
 
 router.get('/nosotros', paginaNosotros);
 router.get('/viajes', paginaViajes);
+router.get('/viajes/:slug', paginaDetalleViaje);
 router.get('/testimoniales', paginaTestimonios);
 export default router;
